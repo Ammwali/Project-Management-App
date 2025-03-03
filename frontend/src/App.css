@@ -81,6 +81,10 @@ body {
   background-color: transparent; /* Focus hone ya value likhne ke baad color change hoga */
 }
 
+.email:focus{
+  color: gray;
+}
+
 .password:focus,
 .password:not(:placeholder-shown) {
   background-color: transparent; /* Focus hone ya value likhne ke baad color change hoga */
