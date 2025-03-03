@@ -1,6 +1,6 @@
 export const fetchAllEnployees = async () => {
 
-    const res = await fetch('http://localhost:5000/api/admin/employees',{
+    const res = await fetch('https://promange-app.onrender.com/api/admin/employees',{
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -14,7 +14,7 @@ export const fetchAllEnployees = async () => {
 
 export const fetchOneEmployees = async (id) => {
 
-    const res = await fetch(`http://localhost:5000/api/admin/employee/${id}`,{
+    const res = await fetch(`https://promange-app.onrender.com/api/admin/employee/${id}`,{
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ export const fetchOneEmployees = async (id) => {
 
 export const fetchUpdateEmployees = async (id, updatedEmployee) => {
 
-    const res = await fetch(`http://localhost:5000/api/admin/employee/update/${id}`,{
+    const res = await fetch(`https://promange-app.onrender.com/api/admin/employee/update/${id}`,{
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ export const fetchUpdateEmployees = async (id, updatedEmployee) => {
 
 export const fetchDeleteEmployees = async (id) => {
 
-    const res = await fetch(`http://localhost:5000/api/admin/employee/delete/${id}`,{
+    const res = await fetch(`https://promange-app.onrender.com/api/admin/employee/delete/${id}`,{
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json',

@@ -1,6 +1,6 @@
 export const fetchAllProjects = async () => {
 
-    const res = await fetch('http://localhost:5000/api/projects/allProjects',{
+    const res = await fetch('https://promange-app.onrender.com/api/projects/allProjects',{
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -14,7 +14,7 @@ export const fetchAllProjects = async () => {
 
 export const fetchOneProjects = async (id) => {
 
-    const res = await fetch(`http://localhost:5000/api/projects/project/${id}`,{
+    const res = await fetch(`https://promange-app.onrender.com/api/projects/project/${id}`,{
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ export const fetchOneProjects = async (id) => {
 
 export const fetchUpdateProjects = async (id, updatedProject) => {
 
-    const res = await fetch(`http://localhost:5000/api/projects/update/${id}`,{
+    const res = await fetch(`https://promange-app.onrender.com/api/projects/update/${id}`,{
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ export const fetchUpdateProjects = async (id, updatedProject) => {
 
 export const fetchDeleteProjects = async (id) => {
 
-    const res = await fetch(`http://localhost:5000/api/projects/delete/${id}`,{
+    const res = await fetch(`https://promange-app.onrender.com/api/projects/delete/${id}`,{
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json',

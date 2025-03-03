@@ -9,7 +9,7 @@ const useCreateProject = () => {
         setError(null);
         setLoading(true);
   
-        const res = await fetch("http://localhost:5000/api/projects/create", {
+        const res = await fetch("https://promange-app.onrender.com/api/projects/create", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
