@@ -1,0 +1,900 @@
+.user-dashboard {
+  min-height: 100vh;
+  /* padding: 0.5%; */
+}
+
+.user-side-bar {
+  padding: 15px;
+  background-color: #312549;
+  color: white;
+  width: 200px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 100%;
+}
+
+.user-side-bar-con {
+  height: inherit;
+}
+
+.user-dashboard-heading {
+  margin-bottom: 60px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.user-dashboard-heading h3 {
+  font-weight: 300;
+}
+
+.user-link a {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #d0bbf3;
+  transition: 0.3s ease-in-out;
+  border-radius: 50px;
+  border: 0.5px solid transparent;
+  font-weight: 300;
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
+  padding: 10px 20px;
+  &:hover {
+    background-color: #d1bbf33a;
+  }
+}
+
+.user-links i {
+  margin-right: 10px;
+}
+
+.user-side-bar .user-links.active {
+  background-color: #d0bbf3;
+  color: #312549;
+}
+
+.user-links-con {
+  border-bottom: 0.5px solid #d1bbf356;
+}
+
+.logout-btn-user {
+  background-color: transparent;
+  border: none;
+  color: #d0bbf3;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    font-weight: 600;
+  }
+}
+
+.logout-btn-user i {
+  margin-right: 10px;
+}
+
+/* Navbar */
+.user-navbar {
+  width: 100%;
+  padding: 15px 30px;
+  justify-content: space-between;
+}
+
+.user-greetings h3 {
+  font-weight: 600;
+}
+
+.user-greetings p {
+  font-size: 14px;
+  opacity: 0.6;
+  font-weight: 500;
+}
+
+/* User Panel */
+.navbar-and-user-panel {
+  width: 100%;
+  padding: 2%;
+}
+
+.user-panel {
+  padding: 0 30px;
+}
+
+.user-card {
+  padding: 20px;
+  border: 0.5px solid #31254961;
+  border-radius: 20px;
+  height: 150px;
+  position: relative;
+}
+
+.user-card-details h4 {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.user-card-details span {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.user-card-details p {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.user-card-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  border: 0.5px solid #31254982;
+  box-shadow: 2px 2px 10px #31254960;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+}
+
+.user-card-con-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 40px;
+}
+
+/*  Calendar  */
+
+.calendar-container {
+  width: 300px;
+  padding: 1rem;
+  border-radius: 12px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 232, 184, 1) 0%,
+    rgba(255, 214, 214, 1) 100%
+  );
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-family: sans-serif;
+  color: #333;
+  height: fit-content;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.calendar-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.arrow-button {
+  border: none;
+  background: #312549;
+  color: white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-weight: 200;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.days-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.day-name {
+  width: calc(100% / 7);
+  text-align: center;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* Dates row */
+.dates-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-cell {
+  width: calc(100% / 7);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.date-cell:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.selected {
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 0 0 2px #ffd500 inset;
+  font-weight: 600;
+}
+
+.cards-and-calender {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.salaryCard {
+  border: 0.5px solid #31254961;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 30px;
+  gap: 40px;
+}
+
+.salaryCard-details h4 {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.salaryCard-details span {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.salaryCard-details p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.salaryCard-icon {
+  /* border: 0.5px solid #31254961; */
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top right, #fee1db, #e2a896);
+  color: #312549;
+}
+
+.salaryCard-icon-bg {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #e7b2a24b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-card {
+  border: 0.5px solid #31254961;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 30px;
+  gap: 10px;
+  width: 150px;
+}
+
+.salaryCard-and-statusCards {
+  gap: 30px;
+}
+
+.salary-head-and-details {
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 10px;
+}
+
+.salary-head-and-details div {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.7;
+  background-color: #31254939;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+.tax div {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.more-details {
+  justify-content: space-between;
+}
+
+.last-month {
+  margin-top: 10px;
+  text-align: end;
+}
+
+.last-month p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: 600;
+}
+
+.last-month div {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.salaryCard-icon-bg {
+  margin-left: 30px;
+}
+
+.status-card-icon {
+  background-color: #e2a8968d;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  color: #312549;
+}
+
+/* Project Card */
+.user-project-card {
+  width: 40%;
+  padding: 15px;
+  margin-top: 30px;
+  background-image: linear-gradient(
+    to top right,
+    #d4bdf4,
+    #d3bef4,
+    #d7adc5,
+    #e39486
+  );
+  border-radius: 20px;
+  position: relative;
+}
+
+.salary-cards-status-cards-project-card {
+  gap: 20px;
+}
+
+.project-user-card-icon {
+  height: 40px;
+  width: 40px;
+  background-color: #312549;
+  color: white;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.project-user-card-head {
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.project-user-card-and-detail p {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.project-user-card-priority {
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.368);
+  height: fit-content;
+  font-weight: 500;
+  padding: 2px 7px;
+  border-radius: 15px;
+  margin-left: 0;
+  position: absolute;
+  right: 15px;
+}
+
+.project-user-card-body p {
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.project-user-card-body span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.project-user-status {
+  background-color: #e39486a9;
+  padding: 2px 5px;
+  border-radius: 15px;
+}
+
+/* User Profile */
+.user-detail-card {
+  padding: 20px;
+  border: 0.5px solid #31254946;
+  border-radius: 20px;
+  margin-top: 100px;
+  height: fit-content;
+}
+
+.user-name-and-profession {
+  padding-bottom: 20px;
+  border-bottom: 0.5px solid #31254946;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.user-name-and-profession p {
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.user-email {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid #31254946;
+}
+
+.user-email p {
+  align-items: center;
+  gap: 10px;
+}
+
+.user-profile-icon-bg {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #e7b2a24b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-profile-icon {
+  background-image: linear-gradient(to top right, #f6d3cb, #e8b6a7);
+  height: 40px;
+  width: 40px;
+  align-content: center;
+  border-radius: 50px;
+
+  color: #312549;
+}
+
+.user-skills {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.user-inner {
+  align-items: center;
+  gap: 10px;
+}
+
+.user-profile-form {
+  width: 40%;
+  margin-top: 80px;
+}
+
+.user-detail-card-and-profile-form {
+  gap: 50px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.7;
+  margin-bottom: 5px;
+}
+
+.profile-i {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
+  border: 0.5px solid #31254946;
+  border-radius: 10px;
+  &:focus {
+    border: 0.5px solid #e2988e;
+  }
+}
+
+.profile-update-btn {
+  padding: 10px 20px;
+  background-color: #d3bdf4;
+  border: none;
+  font-size: 15px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: #b598ef;
+  }
+  &:active {
+    background-color: #312549;
+  }
+}
+
+.progress-user-project {
+  margin-top: 15px;
+}
+
+.project-user-card-body p a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.8;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+/* Update Side */
+
+.user-panel {
+  height: inherit;
+}
+
+.user-project-detail-card-and-form {
+  gap: 40px;
+  justify-content: center;
+  height: inherit;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.user-project-detail-card-with-team-members {
+  width: 50%;
+}
+
+.user-project-detail-card {
+  padding: 20px;
+  border: 0.5px solid #3125493d;
+  border-radius: 15px;
+  height: fit-content;
+  align-self: flex-end;
+}
+
+.user-project-detail-priority-and-title {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.user-project-detail-priority-and-title p {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background-color: #e2988ea2;
+}
+
+.user-project-detail-body p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.user-project-detail-body span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.-status {
+  background-color: #b598efa5;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+.user-project-display-card {
+  width: 100%;
+  box-shadow: 2px 2px 10px #31254941;
+  margin-top: 0;
+}
+
+.head-and-length {
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.head-and-length p {
+  background-color: #31254933;
+  padding: 0px 5px;
+  height: fit-content;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.user-projects {
+  padding: 15px;
+  border: 0.5px solid #3125493d;
+  border-radius: 15px;
+  height: fit-content;
+}
+
+.user-projects-and-all-projects {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  gap: 20px;
+}
+
+.all-user-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.-panel {
+  padding: 0;
+}
+
+.user-all-projects-head h4 {
+  margin-bottom: 20px;
+}
+
+.-priority {
+  margin-left: 10%;
+}
+
+.-card {
+  margin-bottom: 20px;
+}
+
+.team-display-card {
+  padding: 20px;
+  border: 0.5px solid #3125493d;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.team-display-card h4 {
+  /* opacity: 0.8; */
+  margin-bottom: 10px;
+}
+
+.team-card p {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.draggable-progress-bar-con {
+  gap: 10px;
+}
+
+.draggable-progress-bar-con span {
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .user-card-icon {
+    right: 10px;
+  }
+
+  .salary-cards-status-cards-project-card {
+    flex-direction: column-reverse;
+  }
+
+  .salaryCard-and-statusCards {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .salaryCard {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .user-project-card {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .user-projects-and-all-projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 912px) {
+  /* .project-user-card-priority{
+    margin-left: 55%;
+   } */
+
+  .user-dashboard {
+    flex-direction: column-reverse;
+    /* height: 100%; */
+    min-height: 100%;
+    padding-bottom: 100px;
+  }
+
+  .user-side-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    z-index: 1000;
+  }
+
+  .user-dashboard-heading {
+    display: none;
+  }
+
+  .user-links-con {
+    display: flex;
+  }
+
+  .user-link a {
+    margin: 0;
+  }
+
+  .logout-btn-user {
+    margin: 0;
+  }
+
+  .user-links-con {
+    border: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-and-calender {
+    grid-template-columns: 1fr;
+  }
+
+  .calendar-container {
+    width: 100%;
+  }
+
+  .date-cell {
+    width: calc(100% / 7);
+    height: 50px;
+  }
+
+  .status-cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: space-around;
+  }
+
+  .status-card {
+    margin: 0;
+  }
+
+  .user-panel {
+    padding: 0 3%;
+  }
+
+  .user-projects-and-all-projects {
+    grid-template-columns: 1fr;
+  }
+
+  .user-project-detail-card-and-form {
+    flex-direction: column;
+    gap: 0;
+    margin-top: 20px;
+  }
+
+  .user-project-detail-card-with-team-members {
+    width: 100%;
+  }
+
+  .user-profile-form {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .user-detail-card-and-profile-form{
+    flex-direction: column;
+  }
+
+  .user-detail-card{
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .salaryCard-and-statusCards {
+    grid-template-columns: 1fr;
+  }
+
+  .status-cards {
+    flex-direction: row;
+    margin-top: 0px;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .status-card {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .status-card-icon {
+    display: none;
+  }
+
+  /* .project-user-card-priority{
+    margin-left: 35%;
+   } */
+
+  .links-name {
+    display: none;
+  }
+
+  .user-link a {
+    padding: 10px;
+    width: 50px;
+    font-size: 18px;
+  }
+
+  .logout-btn-user {
+    font-size: 18px;
+  }
+
+  .logout-btn-user span {
+    display: none;
+  }
+
+  .user-links-con {
+    gap: 20px;
+  }
+
+  .user-card-con-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .date-cell {
+    width: calc(100% / 7);
+    height: 40px;
+  }
+
+  /* .-card{
+    position: relative;
+   } */
+}
